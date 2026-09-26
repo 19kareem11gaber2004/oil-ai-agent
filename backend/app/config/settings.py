@@ -1,5 +1,5 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-frontend_url: str = "http://localhost:5173"
+
 
 class Settings(BaseSettings):
     app_name: str = "Oil AI Agent API"
@@ -11,8 +11,10 @@ class Settings(BaseSettings):
 
     frontend_url: str = "http://localhost:5173"
 
-    openai_api_key: str = ""
-    gemini_api_key: str = ""
+    database_url: str
+
+    ollama_host: str = "http://localhost:11434"
+    ollama_model: str = "llama3.1:8b"
 
     model_config = SettingsConfigDict(
         env_file=".env",
