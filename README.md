@@ -367,6 +367,4 @@ Small, realistic next steps building on the current design (not implemented):
 - Frontend test setup (Vitest + Testing Library) and CI running pytest + build + lint.
 - Structured/JSON logging with rotation and a request ID.
 
-## License
 
-No license file is present in the repository.
